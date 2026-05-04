@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stefano Ferraro — studente di informatica. Qui raccolgo i siti che sto costruendo per attività locali, brand e progetti creativi."
+    />
+    <title>Stefano Ferraro | Web Design &amp; Sviluppo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Vai al contenuto</a>
+    <!-- id="top" must stay at document start so "Torna su" (#top) scrolls to page top reliably -->
+    <div id="top" class="anchor-top"></div>
+
+    <header class="site-header">
+      <nav class="nav" data-i18n-aria-label="nav.main">
+        <a class="nav__logo" href="#top">Stefano Ferraro</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="#about" data-i18n="nav.about">Chi sono</a></li>
+          <li><a class="nav__link" href="#services" data-i18n="nav.services">Servizi</a></li>
+          <li><a class="nav__link" href="#process" data-i18n="nav.process">Processo</a></li>
+          <li><a class="nav__link" href="#projects" data-i18n="nav.projects">Progetti</a></li>
+          <li><a class="nav__link nav__link--cta" href="#contact" data-i18n="nav.contact">Contatti</a></li>
+        </ul>
+        <div class="nav__tail">
+          <div class="nav__lang" role="group" data-i18n-aria-label="nav.lang">
+            <button type="button" class="nav__lang-btn is-active" data-lang="it" aria-pressed="true">
+              IT
+            </button>
+            <span class="nav__lang-sep" aria-hidden="true">/</span>
+            <button type="button" class="nav__lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Apri menu"
+          >
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <p class="hero__eyebrow reveal" data-reveal data-i18n="hero.eyebrow">
+            Siti web per attività locali
+          </p>
+          <h1 id="hero-title" class="hero__title reveal" data-reveal data-i18n="hero.title">
+            Vorrei costruire siti web per attività locali e piccoli brand.
+          </h1>
+          <p class="hero__subtitle reveal" data-reveal data-i18n="hero.subtitle">
+            Sto costruendo questo percorso perché vedo troppi siti tutti uguali: lenti, confusi,
+            dimenticati. L’idea è creare pagine utili, che raccontino bene un progetto e funzionino
+            davvero su telefono.
+          </p>
+          <div class="hero__actions reveal" data-reveal>
+            <a class="btn btn--primary" href="#projects" data-i18n="hero.cta.projects"
+              >Guarda i progetti</a
+            >
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta.contact">Contattami</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label" data-i18n="about.label">Chi sono</span>
+            <h2 id="about-title" class="section__title" data-i18n="about.title">
+              Da dove parto
+            </h2>
+          </div>
+          <div class="about__grid about-grid">
+            <!--
+              IMPORTANTE: sostituisci assets/stefano-profile.jpg con la tua foto reale (stesso percorso o aggiorna src).
+              Dimensioni consigliate: almeno 800×1000 px, formato JPG o WebP, ritratto.
+            -->
+            <div class="glass-card about__photo profile-card about-photo reveal" data-reveal>
+              <img
+                src="assets/stefano-profile.jpg"
+                alt="Ritratto di Stefano Ferraro"
+                width="640"
+                height="800"
+                loading="lazy"
+                decoding="async"
+                data-i18n-alt="about.alt"
+              />
+            </div>
+            <div class="about__text-col reveal" data-reveal>
+              <div class="glass-card about__copy">
+                <p class="about__lead" data-i18n="about.p1">
+                  Sono Stefano Ferraro, ho 20 anni e studio informatica. Ho frequentato l’Istituto
+                  Torricelli di Milano, dove ho messo basi su programmazione, database, reti e
+                  sviluppo software.
+                </p>
+                <p data-i18n="about.p2">
+                  Da lì ho iniziato a fissarmi col web: mi interessa prendere informazioni sparse e
+                  trasformarle in una pagina che una persona capisce in pochi secondi.
+                </p>
+                <p data-i18n="about.p3">
+                  Questo sito è anche parte del mio percorso verso la maturità. Non è la vetrina di
+                  uno studio avviato: è il punto da cui voglio partire, con lavori veri e progressi
+                  visibili.
+                </p>
+                <p class="about__closing" data-i18n="about.p4">
+                  Nel tempo libero seguo tecnologia, design e brand emergenti. E sì, a volte passo
+                  più tempo a sistemare due spaziature che a scegliere cosa mangiare.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label" data-i18n="services.label">Servizi</span>
+            <h2 id="services-title" class="section__title" data-i18n="services.title">
+              Cosa posso fare per te
+            </h2>
+            <p class="section__lead" data-i18n="services.lead">
+              Queste sono le cose che oggi so fare e che vorrei offrire in progetti reali.
+            </p>
+          </div>
+          <div class="services__grid">
+            <article class="glass-card service-card reveal" data-reveal>
+              <div class="service-card__icon" aria-hidden="true">01</div>
+              <h3 class="service-card__title" data-i18n="services.1.title">Landing page</h3>
+              <p class="service-card__text" data-i18n="services.1.text">
+                Una landing page con le informazioni essenziali: cosa fai, contatti, orari, dove
+                trovarti.
+              </p>
+            </article>
+            <article class="glass-card service-card reveal" data-reveal>
+              <div class="service-card__icon" aria-hidden="true">02</div>
+              <h3 class="service-card__title" data-i18n="services.2.title">Redesign sito</h3>
+              <p class="service-card__text" data-i18n="services.2.text">
+                Un rifacimento di siti vecchi: testo leggibile, struttura sensata, uso semplice da
+                mobile.
+              </p>
+            </article>
+            <article class="glass-card service-card reveal" data-reveal>
+              <div class="service-card__icon" aria-hidden="true">03</div>
+              <h3 class="service-card__title" data-i18n="services.3.title">Siti per brand</h3>
+              <p class="service-card__text" data-i18n="services.3.text">
+                Pagine per brand o progetti creativi che non sembrino template copiati: tono visivo
+                riconoscibile e contenuti messi bene in evidenza.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="container container--narrow">
+          <div class="section__head reveal section__head--center" data-reveal>
+            <span class="section__label" data-i18n="process.label">Come imposterei un progetto</span>
+            <h2 id="process-title" class="section__title" data-i18n="process.title">
+              Metodo di lavoro
+            </h2>
+          </div>
+          <ol class="process__timeline">
+            <li class="process-step process-step--odd reveal" data-reveal>
+              <article class="glass-card process-card">
+                <h3 class="process-card__heading">
+                  <span class="process-card__num">01</span>
+                  <span class="process-card__title" data-i18n="process.s1.title">Analisi</span>
+                </h3>
+                <p class="process-card__text" data-i18n="process.s1.text">
+                  Partirei dagli obiettivi: cosa deve ottenere il sito e quali informazioni devono
+                  comparire subito.
+                </p>
+              </article>
+            </li>
+            <li class="process-step process-step--even reveal" data-reveal>
+              <article class="glass-card process-card">
+                <h3 class="process-card__heading">
+                  <span class="process-card__num">02</span>
+                  <span class="process-card__title" data-i18n="process.s2.title">Struttura</span>
+                </h3>
+                <p class="process-card__text" data-i18n="process.s2.text">
+                  Poi metterei in ordine i contenuti: sezioni, priorità e percorso della pagina.
+                </p>
+              </article>
+            </li>
+            <li class="process-step process-step--odd reveal" data-reveal>
+              <article class="glass-card process-card">
+                <h3 class="process-card__heading">
+                  <span class="process-card__num">03</span>
+                  <span class="process-card__title" data-i18n="process.s3.title"
+                    >Design e sviluppo</span
+                  >
+                </h3>
+                <p class="process-card__text" data-i18n="process.s3.text">
+                  A quel punto passerei a design e sviluppo, con test pratici su desktop e telefono.
+                </p>
+              </article>
+            </li>
+            <li class="process-step process-step--even reveal" data-reveal>
+              <article class="glass-card process-card">
+                <h3 class="process-card__heading">
+                  <span class="process-card__num">04</span>
+                  <span class="process-card__title" data-i18n="process.s4.title"
+                    >Pubblicazione</span
+                  >
+                </h3>
+                <p class="process-card__text" data-i18n="process.s4.text">
+                  Infine pubblicherei il sito e farei un controllo finale su link, velocità e
+                  dettagli.
+                </p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label" data-i18n="projects.label">Progetti</span>
+            <h2 id="projects-title" class="section__title" data-i18n="projects.title">
+              Lavori e demo
+            </h2>
+            <p class="section__lead" data-i18n="projects.lead">
+              Questa sezione è una fotografia onesta di dove sono adesso: una demo pubblicata e
+              lavori in corso.
+            </p>
+          </div>
+          <div class="projects__grid">
+            <article class="glass-card project-card project-card--done reveal" data-reveal>
+              <span
+                class="project-card__status project-card__status--done"
+                data-i18n="projects.status.done"
+                >Demo completata</span
+              >
+              <p class="project-card__category" data-i18n="projects.1.cat">
+                Redesign brand streetwear
+              </p>
+              <h3 class="project-card__title">Concrete Dreams</h3>
+              <p class="project-card__desc" data-i18n="projects.1.desc">
+                Demo di redesign per un brand streetwear. Mi è servita per allenare struttura
+                homepage, gerarchia visiva e presentazione prodotti.
+              </p>
+              <a
+                class="btn btn--primary btn--sm"
+                href="https://stefano-ferraro.github.io/ConcreteDreams/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.1.cta"
+                >Apri progetto</a
+              >
+            </article>
+            <article class="glass-card project-card project-card--wip reveal" data-reveal>
+              <span
+                class="project-card__badge"
+                data-i18n="projects.wip.badge"
+                data-i18n-aria-label="projects.status.wip"
+                >WIP</span
+              >
+              <span
+                class="project-card__status project-card__status--wip"
+                data-i18n="projects.status.wip"
+                >In corso</span
+              >
+              <p class="project-card__category" data-i18n="projects.2.cat">
+                Sito attività locale
+              </p>
+              <h3 class="project-card__title" data-i18n="projects.2.title">In arrivo</h3>
+              <p class="project-card__desc" data-i18n="projects.2.desc">
+                Progetto in sviluppo per attività locale. Prossimo passo: chiudere contenuti e test
+                mobile.
+              </p>
+              <span class="btn btn--disabled btn--sm" role="button" aria-disabled="true" data-i18n="projects.2.btn">In lavorazione</span>
+            </article>
+            <article class="glass-card project-card project-card--wip reveal" data-reveal>
+              <span
+                class="project-card__badge"
+                data-i18n="projects.wip.badge"
+                data-i18n-aria-label="projects.status.wip"
+                >WIP</span
+              >
+              <span
+                class="project-card__status project-card__status--wip"
+                data-i18n="projects.status.wip"
+                >In corso</span
+              >
+              <p class="project-card__category" data-i18n="projects.3.cat">
+                Sito brand creativo
+              </p>
+              <h3 class="project-card__title" data-i18n="projects.3.title">In arrivo</h3>
+              <p class="project-card__desc" data-i18n="projects.3.desc">
+                Spazio riservato al prossimo caso studio. L’idea è pubblicare qui i progressi, non
+                solo il risultato finale.
+              </p>
+              <span class="btn btn--disabled btn--sm" role="button" aria-disabled="true" data-i18n="projects.3.btn">In lavorazione</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact__layout">
+            <div class="section__head reveal" data-reveal>
+              <span class="section__label" data-i18n="contact.label">Contatti</span>
+              <h2 id="contact-title" class="section__title" data-i18n="contact.title">
+                Se ti ritrovi in questa idea, scrivimi
+              </h2>
+              <p class="section__lead" data-i18n="contact.lead">
+                Se quello che hai letto ti torna, mandami una mail. Anche solo per confrontarci su
+                un’idea.
+              </p>
+            </div>
+            <div class="glass-card contact__card contact-inner reveal" data-reveal>
+              <div class="contact__actions">
+                <a class="contact-btn contact-link" href="mailto:hello@stefanoferraro.it">
+                  <span class="contact-btn__label contact-link-title">Email</span>
+                  <span class="contact-btn__arrow contact-link-arrow" aria-hidden="true">→</span>
+                  <span class="contact-btn__hint contact-link-text">stefanoferraro17@icloud.com</span>
+                </a>
+                <a
+                  class="contact-btn contact-link"
+                  href="https://github.com/stefano-ferraro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="contact-btn__label contact-link-title">GitHub</span>
+                  <span class="contact-btn__arrow contact-link-arrow" aria-hidden="true">→</span>
+                  <span
+                    class="contact-btn__hint contact-link-text"
+                    data-i18n="contact.github.hint"
+                    >Qui trovi codice, prove e progetti pubblicati.</span
+                  >
+                </a>
+                <a
+                  class="contact-btn contact-link"
+                  href="https://www.instagram.com/stefanoferraroo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="contact-btn__label contact-link-title">Instagram</span>
+                  <span class="contact-btn__arrow contact-link-arrow" aria-hidden="true">→</span>
+                  <span
+                    class="contact-btn__hint contact-link-text"
+                    data-i18n="contact.instagram.hint"
+                    >Se preferisci, ci sentiamo anche qui.</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__brand">© <span id="year"></span> Stefano Ferraro</p>
+        <p class="footer__tag" data-i18n="footer.tag">Studente di informatica — Milano, Italia</p>
+        <a class="footer__top" href="#top" data-i18n="footer.top">Torna su</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
