@@ -450,62 +450,78 @@ button:focus-visible {
   gap: 0.75rem;
 }
 
-/* About — photo left / text right on desktop; stacked on mobile (photo first) */
+/* About — capped photo width; grid max ~1180px centered */
+
+.about > .container {
+  width: min(1180px, 100% - 2rem);
+  max-width: 1180px;
+  margin-inline: auto;
+}
 
 .about .section__head {
   margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
 }
 
-.about__columns {
+.about__grid,
+.about-grid {
+  max-width: 1180px;
+  margin: 0 auto;
   display: grid;
-  gap: clamp(1.75rem, 4vw, 2.75rem);
-  align-items: start;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
 }
 
-@media (min-width: 900px) {
-  .about__columns {
-    grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
-    gap: clamp(2rem, 4vw, 3.5rem);
-  }
+.about__text-col {
+  min-width: 0;
 }
 
-.about__figure {
-  margin: 0;
-  padding: clamp(0.65rem, 2vw, 0.85rem);
+.about__photo,
+.about-photo,
+.profile-card {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
   overflow: hidden;
-  border-radius: var(--radius);
+  justify-self: center;
+  padding: 0;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
   transition:
     transform 0.35s var(--ease-out),
-    border-color 0.3s var(--ease-out),
-    box-shadow 0.35s var(--ease-out);
+    border-color 0.3s var(--ease-out);
 }
 
-.about__figure:hover {
+.about__photo:hover,
+.about-photo:hover,
+.profile-card:hover {
   transform: translateY(-3px);
   border-color: rgba(124, 156, 255, 0.22);
 }
 
-.about__photo {
+.about__photo img,
+.about-photo img,
+.profile-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: calc(var(--radius) - 4px);
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.45),
-    0 2px 0 rgba(255, 255, 255, 0.06) inset;
 }
 
-.about__photo-col {
-  max-width: 420px;
-  margin-inline: auto;
-}
+@media (max-width: 768px) {
+  .about__grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
 
-@media (min-width: 900px) {
-  .about__photo-col {
-    margin-inline: 0;
-    max-width: none;
+  .about__photo,
+  .about-photo,
+  .profile-card {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
