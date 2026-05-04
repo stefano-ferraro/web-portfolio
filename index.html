@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stefano Ferraro — siti web moderni per brand e attività locali. Web design e sviluppo."
+    />
+    <title>Stefano Ferraro | Web Design &amp; Sviluppo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Navigazione principale">
+        <a class="nav__logo" href="#top">Stefano Ferraro</a>
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Apri menu"
+        >
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="#about">Chi sono</a></li>
+          <li><a class="nav__link" href="#services">Servizi</a></li>
+          <li><a class="nav__link" href="#projects">Progetti</a></li>
+          <li><a class="nav__link" href="#process">Processo</a></li>
+          <li><a class="nav__link" href="#pricing">Prezzi</a></li>
+          <li><a class="nav__link nav__link--cta" href="#contact">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <p class="hero__eyebrow reveal" data-reveal>Web design &amp; sviluppo</p>
+          <h1 id="hero-title" class="hero__title reveal" data-reveal>
+            Creo siti web moderni per brand e attività locali.
+          </h1>
+          <p class="hero__subtitle reveal" data-reveal>
+            Aiuto piccoli business, locali e progetti creativi ad avere una presenza online più
+            professionale, chiara e facile da usare.
+          </p>
+          <div class="hero__actions reveal" data-reveal>
+            <a class="btn btn--primary" href="#projects">Guarda i progetti</a>
+            <a class="btn btn--ghost" href="#contact">Contattami</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label">Chi sono</span>
+            <h2 id="about-title" class="section__title">Focus su design, web e chiarezza</h2>
+          </div>
+          <div class="about__grid">
+            <div class="glass-card about__card reveal" data-reveal>
+              <p class="about__text">
+                Sono Stefano Ferraro, studente di informatica con una forte attenzione al design, al
+                web e alla comunicazione digitale. Creo siti semplici, moderni e responsive per
+                attività locali, brand emergenti e piccoli progetti.
+              </p>
+            </div>
+            <div class="about__highlights">
+              <ul class="about__list">
+                <li class="glass-card about__pill reveal" data-reveal>HTML, CSS &amp; JavaScript</li>
+                <li class="glass-card about__pill reveal" data-reveal>Layout responsive e accessibili</li>
+                <li class="glass-card about__pill reveal" data-reveal>Identità visiva coerente</li>
+                <li class="glass-card about__pill reveal" data-reveal>Collaborazione chiara e trasparente</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label">Servizi</span>
+            <h2 id="services-title" class="section__title">Cosa posso fare per te</h2>
+            <p class="section__lead">
+              Soluzioni su misura per chi vuole comparire online in modo professionale, senza
+              complicazioni inutili.
+            </p>
+          </div>
+          <div class="services__grid">
+            <article class="glass-card service-card reveal" data-reveal>
+              <div class="service-card__icon" aria-hidden="true">01</div>
+              <h3 class="service-card__title">Landing page</h3>
+              <p class="service-card__text">
+                Una pagina completa per presentare attività, servizi, contatti, orari e posizione.
+              </p>
+            </article>
+            <article class="glass-card service-card reveal" data-reveal>
+              <div class="service-card__icon" aria-hidden="true">02</div>
+              <h3 class="service-card__title">Redesign sito</h3>
+              <p class="service-card__text">
+                Rinnovo siti esistenti rendendoli più moderni, ordinati e adatti al mobile.
+              </p>
+            </article>
+            <article class="glass-card service-card reveal" data-reveal>
+              <div class="service-card__icon" aria-hidden="true">03</div>
+              <h3 class="service-card__title">Siti per brand</h3>
+              <p class="service-card__text">
+                Creo pagine con uno stile visivo forte per brand, prodotti e progetti creativi.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label">Progetti</span>
+            <h2 id="projects-title" class="section__title">Lavori e demo</h2>
+            <p class="section__lead">
+              Esempi e progetti in corso. Ogni card riflette uno stato reale del lavoro.
+            </p>
+          </div>
+          <div class="projects__grid">
+            <article class="glass-card project-card project-card--done reveal" data-reveal>
+              <span class="project-card__status project-card__status--done">Completed demo</span>
+              <p class="project-card__category">Streetwear brand redesign</p>
+              <h3 class="project-card__title">Concrete Dreams</h3>
+              <p class="project-card__desc">
+                Redesign demo per un brand streetwear, con focus su estetica, identità visiva e
+                presentazione dei prodotti.
+              </p>
+              <a
+                class="btn btn--primary btn--sm"
+                href="https://stefano-ferraro.github.io/ConcreteDreams/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project
+              </a>
+            </article>
+            <article class="glass-card project-card project-card--wip reveal" data-reveal>
+              <span class="project-card__badge" aria-label="Work in progress">WIP</span>
+              <span class="project-card__status project-card__status--wip">Work in progress</span>
+              <p class="project-card__category">Local business website</p>
+              <h3 class="project-card__title">Coming soon</h3>
+              <p class="project-card__desc">
+                Nuova landing page per un’attività locale. Il progetto verrà aggiunto appena
+                completato.
+              </p>
+              <span class="btn btn--disabled btn--sm" role="button" aria-disabled="true"
+                >In progress</span
+              >
+            </article>
+            <article class="glass-card project-card project-card--wip reveal" data-reveal>
+              <span class="project-card__badge" aria-label="Work in progress">WIP</span>
+              <span class="project-card__status project-card__status--wip">Work in progress</span>
+              <p class="project-card__category">Creative brand website</p>
+              <h3 class="project-card__title">Coming soon</h3>
+              <p class="project-card__desc">
+                Nuovo sito per brand o progetto creativo. Sezione riservata ai prossimi lavori.
+              </p>
+              <span class="btn btn--disabled btn--sm" role="button" aria-disabled="true"
+                >In progress</span
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label">Come lavoro</span>
+            <h2 id="process-title" class="section__title">Processo in quattro step</h2>
+          </div>
+          <ol class="process__steps">
+            <li class="glass-card process__step reveal" data-reveal>
+              <span class="process__num">1</span>
+              <div>
+                <h3 class="process__heading">Brief</h3>
+                <p class="process__text">
+                  Obiettivi, pubblico, contenuti e riferimenti visivi: partiamo da una base chiara.
+                </p>
+              </div>
+            </li>
+            <li class="glass-card process__step reveal" data-reveal>
+              <span class="process__num">2</span>
+              <div>
+                <h3 class="process__heading">Struttura &amp; wireframe</h3>
+                <p class="process__text">
+                  Definisco flusso delle sezioni e gerarchia delle informazioni prima del design
+                  finale.
+                </p>
+              </div>
+            </li>
+            <li class="glass-card process__step reveal" data-reveal>
+              <span class="process__num">3</span>
+              <div>
+                <h3 class="process__heading">Design &amp; sviluppo</h3>
+                <p class="process__text">
+                  Stile coerente, responsive e codice pulito; revisioni in base al tuo feedback.
+                </p>
+              </div>
+            </li>
+            <li class="glass-card process__step reveal" data-reveal>
+              <span class="process__num">4</span>
+              <div>
+                <h3 class="process__heading">Pubblicazione</h3>
+                <p class="process__text">
+                  Controllo finale, ottimizzazioni leggere e messa online (es. GitHub Pages o
+                  hosting concordato).
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label">Prezzi</span>
+            <h2 id="pricing-title" class="section__title">Indicazioni indicative</h2>
+            <p class="section__lead">
+              Ogni progetto è diverso: i valori sono punti di partenza; il preventivo finale dipende
+              da contenuti e complessità.
+            </p>
+          </div>
+          <div class="pricing__grid">
+            <article class="glass-card pricing-card reveal" data-reveal>
+              <h3 class="pricing-card__title">Landing page base</h3>
+              <p class="pricing-card__price">da <strong>150€</strong></p>
+              <p class="pricing-card__note">Una pagina efficace per presentarti online.</p>
+            </article>
+            <article class="glass-card pricing-card pricing-card--featured reveal" data-reveal>
+              <span class="pricing-card__ribbon">Più richiesto</span>
+              <h3 class="pricing-card__title">Sito completo</h3>
+              <p class="pricing-card__price">da <strong>350€</strong></p>
+              <p class="pricing-card__note">Più sezioni e struttura su misura.</p>
+            </article>
+            <article class="glass-card pricing-card reveal" data-reveal>
+              <h3 class="pricing-card__title">Redesign / Shopify</h3>
+              <p class="pricing-card__price pricing-card__price--quote"><strong>Su preventivo</strong></p>
+              <p class="pricing-card__note">
+                Valutazione in base a volumi, integrazioni e obiettivi di vendita.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact__layout">
+            <div class="section__head reveal" data-reveal>
+              <span class="section__label">Contatti</span>
+              <h2 id="contact-title" class="section__title">Parliamo del tuo progetto</h2>
+              <p class="section__lead">
+                Scrivimi per una prima call o un preventivo: rispondo in tempi ragionevoli.
+              </p>
+            </div>
+            <div class="glass-card contact__card reveal" data-reveal>
+              <div class="contact__actions">
+                <a class="contact-btn" href="mailto:hello@stefanoferraro.it">
+                  <span class="contact-btn__label">Email</span>
+                  <span class="contact-btn__hint">hello@stefanoferraro.it</span>
+                  <span class="contact-btn__arrow" aria-hidden="true">→</span>
+                </a>
+                <a
+                  class="contact-btn"
+                  href="https://github.com/stefano-ferraro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="contact-btn__label">GitHub</span>
+                  <span class="contact-btn__hint">Profilo e repository</span>
+                  <span class="contact-btn__arrow" aria-hidden="true">→</span>
+                </a>
+                <a
+                  class="contact-btn"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="contact-btn__label">Instagram</span>
+                  <span class="contact-btn__hint">Sostituisci con il link al tuo profilo</span>
+                  <span class="contact-btn__arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+              <p class="contact__note">
+                Sostituisci email e link social con i tuoi dati reali prima della pubblicazione.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__brand">© <span id="year"></span> Stefano Ferraro</p>
+        <p class="footer__tag">Web design &amp; sviluppo — Italia</p>
+        <a class="footer__top" href="#top">Torna su</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
