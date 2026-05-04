@@ -95,6 +95,13 @@ button:focus-visible {
   top: 1rem;
 }
 
+/* Scroll target: must be first in page flow so #top aligns with document start */
+.anchor-top {
+  height: 0;
+  overflow: hidden;
+  scroll-margin-top: 0;
+}
+
 .container {
   width: min(1120px, 100% - 2rem);
   margin-inline: auto;
@@ -443,54 +450,97 @@ button:focus-visible {
   gap: 0.75rem;
 }
 
-/* About */
+/* About — photo left / text right on desktop; stacked on mobile (photo first) */
 
-.about__grid {
-  display: grid;
-  gap: 1.5rem;
+.about .section__head {
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
 }
 
-@media (min-width: 768px) {
-  .about__grid {
-    grid-template-columns: 1.25fr 1fr;
-    align-items: start;
+.about__columns {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 2.75rem);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .about__columns {
+    grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+    gap: clamp(2rem, 4vw, 3.5rem);
   }
 }
 
-.about__card {
-  padding: clamp(1.5rem, 4vw, 2rem);
-}
-
-.about__text {
+.about__figure {
   margin: 0;
-  font-size: 1.0625rem;
-  color: var(--text-muted);
-  line-height: 1.75;
+  padding: clamp(0.65rem, 2vw, 0.85rem);
+  overflow: hidden;
+  border-radius: var(--radius);
+  transition:
+    transform 0.35s var(--ease-out),
+    border-color 0.3s var(--ease-out),
+    box-shadow 0.35s var(--ease-out);
 }
 
-.about__card:hover {
+.about__figure:hover {
   transform: translateY(-3px);
-  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.5);
+  border-color: rgba(124, 156, 255, 0.22);
 }
 
-.about__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.about__photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 2px 0 rgba(255, 255, 255, 0.06) inset;
 }
 
-.about__pill {
-  padding: 0.875rem 1.125rem;
-  font-size: 0.9375rem;
-  font-weight: 500;
+.about__photo-col {
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+@media (min-width: 900px) {
+  .about__photo-col {
+    margin-inline: 0;
+    max-width: none;
+  }
+}
+
+.about__copy {
+  padding: clamp(1.35rem, 4vw, 2rem);
+  transition:
+    transform 0.35s var(--ease-out),
+    border-color 0.3s var(--ease-out);
+}
+
+.about__copy:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.about__copy p {
+  margin: 0 0 1.1em;
+  font-size: clamp(1rem, 2.2vw, 1.0625rem);
+  color: var(--text-muted);
+  line-height: 1.72;
+}
+
+.about__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about__lead {
   color: var(--text);
+  font-size: clamp(1.05rem, 2.4vw, 1.125rem);
+  font-weight: 500;
 }
 
-.about__pill:hover {
-  border-color: rgba(124, 156, 255, 0.25);
+.about__closing {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
 }
 
 /* Services */
@@ -696,79 +746,6 @@ button:focus-visible {
   color: var(--text-muted);
   font-size: 0.9375rem;
   line-height: 1.6;
-}
-
-/* Pricing */
-
-.pricing__grid {
-  display: grid;
-  gap: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .pricing__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.pricing-card {
-  padding: clamp(1.5rem, 3vw, 2rem);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  position: relative;
-}
-
-.pricing-card:hover {
-  transform: translateY(-3px);
-}
-
-.pricing-card--featured {
-  border-color: rgba(124, 156, 255, 0.35);
-  background: rgba(124, 156, 255, 0.06);
-}
-
-.pricing-card__ribbon {
-  position: absolute;
-  top: -0.65rem;
-  right: 1rem;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.65rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: var(--bg-deep);
-}
-
-.pricing-card__title {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.pricing-card__price {
-  margin: 0;
-  font-size: 1.5rem;
-  color: var(--text);
-}
-
-.pricing-card__price strong {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.pricing-card__price--quote strong {
-  font-size: 1.15rem;
-}
-
-.pricing-card__note {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.55;
 }
 
 /* Contact */

@@ -18,8 +18,10 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Vai al contenuto</a>
+    <!-- id="top" must stay at document start so "Torna su" (#top) scrolls to page top reliably -->
+    <div id="top" class="anchor-top"></div>
 
-    <header class="site-header" id="top">
+    <header class="site-header">
       <nav class="nav" aria-label="Navigazione principale">
         <a class="nav__logo" href="#top">Stefano Ferraro</a>
         <button
@@ -38,7 +40,6 @@
           <li><a class="nav__link" href="#services">Servizi</a></li>
           <li><a class="nav__link" href="#projects">Progetti</a></li>
           <li><a class="nav__link" href="#process">Processo</a></li>
-          <li><a class="nav__link" href="#pricing">Prezzi</a></li>
           <li><a class="nav__link nav__link--cta" href="#contact">Contatti</a></li>
         </ul>
       </nav>
@@ -67,23 +68,48 @@
         <div class="container">
           <div class="section__head reveal" data-reveal>
             <span class="section__label">Chi sono</span>
-            <h2 id="about-title" class="section__title">Focus su design, web e chiarezza</h2>
+            <h2 id="about-title" class="section__title">Informatica, web e identità digitale</h2>
           </div>
-          <div class="about__grid">
-            <div class="glass-card about__card reveal" data-reveal>
-              <p class="about__text">
-                Sono Stefano Ferraro, studente di informatica con una forte attenzione al design, al
-                web e alla comunicazione digitale. Creo siti semplici, moderni e responsive per
-                attività locali, brand emergenti e piccoli progetti.
-              </p>
+          <div class="about__columns">
+            <div class="about__photo-col reveal" data-reveal>
+              <figure class="glass-card about__figure">
+                <!--
+                  IMPORTANTE: sostituisci assets/stefano-profile.jpg con la tua foto reale (stesso percorso o aggiorna src).
+                  Dimensioni consigliate: almeno 800×1000 px, formato JPG o WebP, ritratto.
+                -->
+                <img
+                  class="about__photo"
+                  src="assets/stefano-profile.jpg"
+                  alt="Ritratto di Stefano Ferraro"
+                  width="640"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
             </div>
-            <div class="about__highlights">
-              <ul class="about__list">
-                <li class="glass-card about__pill reveal" data-reveal>HTML, CSS &amp; JavaScript</li>
-                <li class="glass-card about__pill reveal" data-reveal>Layout responsive e accessibili</li>
-                <li class="glass-card about__pill reveal" data-reveal>Identità visiva coerente</li>
-                <li class="glass-card about__pill reveal" data-reveal>Collaborazione chiara e trasparente</li>
-              </ul>
+            <div class="about__text-col reveal" data-reveal>
+              <div class="glass-card about__copy">
+                <p class="about__lead">
+                  Sono Stefano Ferraro, ho 20 anni e sono uno studente di informatica. Ho studiato
+                  presso l’Istituto Torricelli di Milano, dove ho approfondito programmazione, basi
+                  di dati, reti e sviluppo software.
+                </p>
+                <p>
+                  Nel tempo ho sviluppato un forte interesse per il web design, la comunicazione
+                  digitale e la creazione di siti moderni per attività locali, brand e piccoli
+                  progetti.
+                </p>
+                <p>
+                  Mi piace unire competenze tecniche e gusto visivo: non mi interessa solo creare un
+                  sito che funzioni, ma anche costruire un’esperienza chiara, ordinata e coerente
+                  con l’identità di chi la usa.
+                </p>
+                <p class="about__closing">
+                  Oltre all’informatica, sono appassionato di tecnologia, design, contenuti digitali,
+                  brand emergenti e progetti creativi.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -227,39 +253,6 @@
               </div>
             </li>
           </ol>
-        </div>
-      </section>
-
-      <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
-        <div class="container">
-          <div class="section__head reveal" data-reveal>
-            <span class="section__label">Prezzi</span>
-            <h2 id="pricing-title" class="section__title">Indicazioni indicative</h2>
-            <p class="section__lead">
-              Ogni progetto è diverso: i valori sono punti di partenza; il preventivo finale dipende
-              da contenuti e complessità.
-            </p>
-          </div>
-          <div class="pricing__grid">
-            <article class="glass-card pricing-card reveal" data-reveal>
-              <h3 class="pricing-card__title">Landing page base</h3>
-              <p class="pricing-card__price">da <strong>150€</strong></p>
-              <p class="pricing-card__note">Una pagina efficace per presentarti online.</p>
-            </article>
-            <article class="glass-card pricing-card pricing-card--featured reveal" data-reveal>
-              <span class="pricing-card__ribbon">Più richiesto</span>
-              <h3 class="pricing-card__title">Sito completo</h3>
-              <p class="pricing-card__price">da <strong>350€</strong></p>
-              <p class="pricing-card__note">Più sezioni e struttura su misura.</p>
-            </article>
-            <article class="glass-card pricing-card reveal" data-reveal>
-              <h3 class="pricing-card__title">Redesign / Shopify</h3>
-              <p class="pricing-card__price pricing-card__price--quote"><strong>Su preventivo</strong></p>
-              <p class="pricing-card__note">
-                Valutazione in base a volumi, integrazioni e obiettivi di vendita.
-              </p>
-            </article>
-          </div>
         </div>
       </section>
 

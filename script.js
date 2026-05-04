@@ -52,15 +52,26 @@
   /* Smooth in-page navigation (respect reduced motion) */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
-      const id = this.getAttribute("href");
-      if (!id || id === "#") return;
-      const target = document.querySelector(id);
+      const href = this.getAttribute("href");
+      if (!href || href === "#") return;
+
+      /* #top: scroll to document start (do not subtract header offset — avoids negative scroll) */
+      if (href === "#top") {
+        if (!prefersReducedMotion) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        return;
+      }
+
+      const target = document.querySelector(href);
       if (!target) return;
       if (prefersReducedMotion) return;
+
       e.preventDefault();
       const header = document.querySelector(".site-header");
       const offset = header ? header.offsetHeight : 0;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset - 8;
+      const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset - 8);
       window.scrollTo({ top: top, behavior: "smooth" });
     });
   });
