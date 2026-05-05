@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip.content">Vai al contenuto</a>
@@ -23,7 +24,10 @@
 
     <header class="site-header">
       <nav class="nav" data-i18n-aria-label="nav.main">
-        <a class="nav__logo" href="#top">Stefano Ferraro</a>
+        <a class="nav__logo" href="#top">
+          <img src="assets/favicon.png" alt="SF logo" class="nav__logo-img" />
+          <span>Stefano Ferraro</span>
+        </a>
         <ul class="nav__menu" id="nav-menu">
           <li><a class="nav__link" href="#about" data-i18n="nav.about">Chi sono</a></li>
           <li><a class="nav__link" href="#services" data-i18n="nav.services">Servizi</a></li>
@@ -464,7 +468,7 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p class="footer__brand">© <span id="year"></span> Stefano Ferraro</p>
+<p class="footer__brand">© <span id="year"></span> Stefano Ferraro</p>
         <p class="footer__tag" data-i18n="footer.tag">Web design &amp; sviluppo — Italia</p>
         <a class="footer__top" href="#top" data-i18n="footer.top">Torna su</a>
       </div>

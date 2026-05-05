@@ -230,6 +230,19 @@ button:focus-visible {
   font-size: 1.05rem;
   letter-spacing: -0.02em;
   transition: color 0.2s var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.nav__logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 1px solid rgba(124, 156, 255, 0.3);
+  flex-shrink: 0;
 }
 
 .nav__logo:hover {
@@ -1225,6 +1238,7 @@ button:focus-visible {
     line-height: 1.4;
     max-width: 20rem;
   }
+
 }
 
 @media (min-width: 640px) {
