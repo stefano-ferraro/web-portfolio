@@ -128,6 +128,94 @@
         </div>
       </section>
 
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section__head reveal" data-reveal>
+            <span class="section__label" data-i18n="skills.label">Competenze</span>
+            <h2 id="skills-title" class="section__title" data-i18n="skills.title">Le mie competenze</h2>
+            <p class="section__lead" data-i18n="skills.subtitle">Un mix tra competenze apprese a scuola e abilità sviluppate attraverso progetti personali, pratica e sperimentazione.</p>
+          </div>
+
+          <div class="skills__group reveal" data-reveal>
+            <h3 class="skills__group-title" data-i18n="skills.school.title">Competenze apprese a scuola</h3>
+            <div class="skills__row" tabindex="0" data-i18n-aria-label="skills.school.aria">
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.s1.title">Programmazione</h4>
+                <p class="skill-card__desc" data-i18n="skills.s1.desc">Basi di programmazione, logica, algoritmi e sviluppo software.</p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Java</li>
+                  <li class="skill-badge">Python</li>
+                  <li class="skill-badge">HTML</li>
+                  <li class="skill-badge">CSS</li>
+                  <li class="skill-badge">JavaScript</li>
+                </ul>
+              </article>
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.s2.title">Database</h4>
+                <p class="skill-card__desc" data-i18n="skills.s2.desc">Progettazione e gestione di basi di dati relazionali.</p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">MySQL</li>
+                  <li class="skill-badge">SQL</li>
+                  <li class="skill-badge">phpMyAdmin</li>
+                  <li class="skill-badge">E/R</li>
+                  <li class="skill-badge" data-i18n="skills.s2.badge.norm">Normalizzazione</li>
+                </ul>
+              </article>
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.s3.title">Networking &amp; Linux</h4>
+                <p class="skill-card__desc" data-i18n="skills.s3.desc">Basi di reti informatiche, configurazioni essenziali e utilizzo di Linux da terminale.</p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">TCP/IP</li>
+                  <li class="skill-badge">DNS</li>
+                  <li class="skill-badge">DHCP</li>
+                  <li class="skill-badge">IPv4</li>
+                  <li class="skill-badge">IPv6</li>
+                  <li class="skill-badge">Linux</li>
+                  <li class="skill-badge">SSH</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="skills__group reveal" data-reveal>
+            <h3 class="skills__group-title" data-i18n="skills.personal.title">Competenze personali</h3>
+            <div class="skills__row" tabindex="0" data-i18n-aria-label="skills.personal.aria">
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.p1.title">Web Design</h4>
+                <p class="skill-card__desc" data-i18n="skills.p1.desc">Creazione di interfacce moderne, responsive e curate dal punto di vista visivo.</p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Responsive design</li>
+                  <li class="skill-badge">UI basics</li>
+                  <li class="skill-badge">Landing page</li>
+                  <li class="skill-badge">Portfolio</li>
+                </ul>
+              </article>
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.p2.title">Workflow di sviluppo</h4>
+                <p class="skill-card__desc" data-i18n="skills.p2.desc">Organizzazione dei progetti, versionamento e pubblicazione online.</p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Git</li>
+                  <li class="skill-badge">GitHub</li>
+                  <li class="skill-badge">GitHub Pages</li>
+                  <li class="skill-badge">VS Code</li>
+                  <li class="skill-badge">Cursor</li>
+                </ul>
+              </article>
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.p3.title">Brand e contenuti digitali</h4>
+                <p class="skill-card__desc" data-i18n="skills.p3.desc">Interesse per identità visiva, comunicazione digitale e progetti creativi.</p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Shopify basics</li>
+                  <li class="skill-badge">Figma</li>
+                  <li class="skill-badge">Content design</li>
+                  <li class="skill-badge">Visual identity</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section services" id="services" aria-labelledby="services-title">
         <div class="container">
           <div class="section__head reveal" data-reveal>
@@ -333,7 +421,7 @@
                 <a class="contact-btn contact-link" href="mailto:hello@stefanoferraro.it">
                   <span class="contact-btn__label contact-link-title">Email</span>
                   <span class="contact-btn__arrow contact-link-arrow" aria-hidden="true">→</span>
-                  <span class="contact-btn__hint contact-link-text">stefanoferraro17@icloud.com</span>
+                  <span class="contact-btn__hint contact-link-text" data-i18n="contact.email.hint">Scrivimi per collaborazioni, progetti o informazioni.</span>
                 </a>
                 <a
                   class="contact-btn contact-link"
@@ -346,7 +434,21 @@
                   <span
                     class="contact-btn__hint contact-link-text"
                     data-i18n="contact.github.hint"
-                    >Qui trovi codice, prove e progetti pubblicati.</span
+                    >Dai un'occhiata ai miei progetti e al codice.</span
+                  >
+                </a>
+                <a
+                  class="contact-btn contact-link"
+                  href="https://www.linkedin.com/in/stefano-ferraro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="contact-btn__label contact-link-title">LinkedIn</span>
+                  <span class="contact-btn__arrow contact-link-arrow" aria-hidden="true">→</span>
+                  <span
+                    class="contact-btn__hint contact-link-text"
+                    data-i18n="contact.linkedin.hint"
+                    >Connettiti con me per profilo, esperienze e opportunità.</span
                   >
                 </a>
                 <a
@@ -360,7 +462,7 @@
                   <span
                     class="contact-btn__hint contact-link-text"
                     data-i18n="contact.instagram.hint"
-                    >Se preferisci, ci sentiamo anche qui.</span
+                    >Scrivimi anche su Instagram per un contatto più diretto.</span
                   >
                 </a>
               </div>

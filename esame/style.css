@@ -646,6 +646,113 @@ button:focus-visible {
   border-top: 1px solid var(--glass-border);
 }
 
+/* Skills */
+
+.skills__group {
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.skills__group:last-child {
+  margin-bottom: 0;
+}
+
+.skills__group-title {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 0.875rem;
+}
+
+.skills__row {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 156, 255, 0.22) transparent;
+}
+
+.skills__row::-webkit-scrollbar {
+  height: 3px;
+}
+
+.skills__row::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.skills__row::-webkit-scrollbar-thumb {
+  background: rgba(124, 156, 255, 0.22);
+  border-radius: 2px;
+}
+
+.skill-card {
+  flex: 0 0 min(84vw, 290px);
+  scroll-snap-align: start;
+  padding: clamp(1.5rem, 3vw, 1.75rem);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+@media (min-width: 600px) {
+  .skill-card {
+    flex: 0 0 290px;
+  }
+}
+
+@media (min-width: 900px) {
+  .skill-card {
+    flex: 0 0 320px;
+    min-height: 270px;
+  }
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(124, 156, 255, 0.22);
+}
+
+.skill-card__title {
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skill-card__desc {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  flex-grow: 1;
+}
+
+.skill-card__badges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(124, 156, 255, 0.09);
+  border: 1px solid rgba(124, 156, 255, 0.2);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 /* Services */
 
 .services__grid {
@@ -1167,7 +1274,8 @@ button:focus-visible {
   .btn:hover,
   .glass-card:hover,
   .contact-btn:hover,
-  .process-card:hover {
+  .process-card:hover,
+  .skill-card:hover {
     transform: none;
   }
 
