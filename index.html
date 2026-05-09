@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Stefano Ferraro — siti web moderni per brand e attività locali. Web design e sviluppo."
+      content="Stefano Ferraro — studente di informatica appassionato di sviluppo, networking, 3D e tecnologia creativa."
     />
-    <title>Stefano Ferraro | Web Design &amp; Sviluppo</title>
+    <title>Stefano Ferraro | Studente & Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,6 @@
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip.content">Vai al contenuto</a>
-    <!-- id="top" must stay at document start so "Torna su" (#top) scrolls to page top reliably -->
     <div id="top" class="anchor-top"></div>
 
     <header class="site-header">
@@ -30,8 +29,7 @@
         </a>
         <ul class="nav__menu" id="nav-menu">
           <li><a class="nav__link" href="#about" data-i18n="nav.about">Chi sono</a></li>
-          <li><a class="nav__link" href="#services" data-i18n="nav.services">Servizi</a></li>
-          <li><a class="nav__link" href="#process" data-i18n="nav.process">Processo</a></li>
+          <li><a class="nav__link" href="#skills" data-i18n="nav.skills">Competenze</a></li>
           <li><a class="nav__link" href="#projects" data-i18n="nav.projects">Progetti</a></li>
           <li><a class="nav__link nav__link--cta" href="#contact" data-i18n="nav.contact">Contatti</a></li>
         </ul>
@@ -59,40 +57,47 @@
     </header>
 
     <main id="main">
+
+      <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
       <section class="hero section" aria-labelledby="hero-title">
         <div class="hero__bg" aria-hidden="true"></div>
         <div class="container hero__inner">
           <p class="hero__eyebrow reveal" data-reveal data-i18n="hero.eyebrow">
-            Web design &amp; sviluppo
+            Studente di Informatica · Milano
           </p>
           <h1 id="hero-title" class="hero__title reveal" data-reveal data-i18n="hero.title">
-            Creo siti web moderni per brand e attività locali.
+            Codice, reti, 3D e progetti che nascono per curiosità.
           </h1>
           <p class="hero__subtitle reveal" data-reveal data-i18n="hero.subtitle">
-            Aiuto piccoli business, locali e progetti creativi ad avere una presenza online più
-            professionale, chiara e facile da usare.
+            Sono Stefano Ferraro — studio informatica e costruisco cose tra programmazione,
+            networking, web e strumenti creativi come Blender e Unity.
           </p>
           <div class="hero__actions reveal" data-reveal>
-            <a class="btn btn--primary" href="#projects" data-i18n="hero.cta.projects"
-              >Guarda i progetti</a
-            >
-            <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta.contact">Contattami</a>
+            <a class="btn btn--primary" href="#projects" data-i18n="hero.cta.projects">Guarda i progetti</a>
+            <a
+              class="btn btn--ghost"
+              href="https://github.com/stefano-ferraro"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="hero.cta.github"
+            >GitHub</a>
           </div>
         </div>
       </section>
 
+      <!-- ─── ABOUT ─────────────────────────────────────────────────────────── -->
       <section class="section about" id="about" aria-labelledby="about-title">
         <div class="container">
           <div class="section__head reveal" data-reveal>
             <span class="section__label" data-i18n="about.label">Chi sono</span>
             <h2 id="about-title" class="section__title" data-i18n="about.title">
-              Informatica, web e identità digitale
+              Studio, codice e curiosità creativa
             </h2>
           </div>
           <div class="about__grid about-grid">
             <!--
-              IMPORTANTE: sostituisci assets/stefano-profile.jpg con la tua foto reale (stesso percorso o aggiorna src).
-              Dimensioni consigliate: almeno 800×1000 px, formato JPG o WebP, ritratto.
+              Sostituisci assets/stefano-profile.jpg con la tua foto reale.
+              Dimensioni consigliate: almeno 800×1000 px, ritratto JPG/WebP.
             -->
             <div class="glass-card about__photo profile-card about-photo reveal" data-reveal>
               <img
@@ -108,23 +113,23 @@
             <div class="about__text-col reveal" data-reveal>
               <div class="glass-card about__copy">
                 <p class="about__lead" data-i18n="about.p1">
-                  Sono Stefano Ferraro, ho 20 anni e sono uno studente di informatica. Ho studiato
-                  presso l’Istituto Torricelli di Milano, dove ho approfondito programmazione, basi
-                  di dati, reti e sviluppo software.
+                  Sono Stefano Ferraro, studente di informatica all'Istituto Torricelli di Milano.
+                  In questi anni ho esplorato programmazione, basi di dati, reti informatiche e
+                  sviluppo software.
                 </p>
                 <p data-i18n="about.p2">
-                  Nel tempo ho sviluppato un forte interesse per il web design, la comunicazione
-                  digitale e la creazione di siti moderni per attività locali, brand e piccoli
-                  progetti.
+                  Quello che mi piace di più di questo campo è che permette di mescolare lati molto
+                  diversi: la logica dei sistemi, la creatività del design, la curiosità per come
+                  funziona tutto.
                 </p>
                 <p data-i18n="about.p3">
-                  Mi piace unire competenze tecniche e gusto visivo: non mi interessa solo creare un
-                  sito che funzioni, ma anche costruire un’esperienza chiara, ordinata e coerente
-                  con l’identità di chi la usa.
+                  Nel tempo libero ho iniziato a esplorare anche strumenti creativi come Blender per
+                  la grafica 3D e Unity per lo sviluppo di esperienze interattive — due mondi che si
+                  collegano bene con la programmazione.
                 </p>
                 <p class="about__closing" data-i18n="about.p4">
-                  Oltre all’informatica, sono appassionato di tecnologia, design, contenuti digitali,
-                  brand emergenti e progetti creativi.
+                  Mi interessa costruire cose reali, sperimentare e continuare a imparare. Che sia
+                  un progetto web, un database, una rete o una scena 3D.
                 </p>
               </div>
             </div>
@@ -132,20 +137,26 @@
         </div>
       </section>
 
+      <!-- ─── SKILLS ────────────────────────────────────────────────────────── -->
       <section class="section skills" id="skills" aria-labelledby="skills-title">
         <div class="container">
           <div class="section__head reveal" data-reveal>
             <span class="section__label" data-i18n="skills.label">Competenze</span>
-            <h2 id="skills-title" class="section__title" data-i18n="skills.title">Le mie competenze</h2>
-            <p class="section__lead" data-i18n="skills.subtitle">Un mix tra competenze apprese a scuola e abilità sviluppate attraverso progetti personali, pratica e sperimentazione.</p>
+            <h2 id="skills-title" class="section__title" data-i18n="skills.title">Tecnologie e strumenti</h2>
+            <p class="section__lead" data-i18n="skills.subtitle">
+              Quello che ho imparato tra scuola, progetti personali e sperimentazione.
+            </p>
           </div>
 
+          <!-- School -->
           <div class="skills__group reveal" data-reveal>
-            <h3 class="skills__group-title" data-i18n="skills.school.title">Competenze apprese a scuola</h3>
+            <h3 class="skills__group-title" data-i18n="skills.school.title">A scuola</h3>
             <div class="skills__row" tabindex="0" data-i18n-aria-label="skills.school.aria">
               <article class="glass-card skill-card">
                 <h4 class="skill-card__title" data-i18n="skills.s1.title">Programmazione</h4>
-                <p class="skill-card__desc" data-i18n="skills.s1.desc">Basi di programmazione, logica, algoritmi e sviluppo software.</p>
+                <p class="skill-card__desc" data-i18n="skills.s1.desc">
+                  Basi di programmazione, logica, algoritmi e sviluppo software.
+                </p>
                 <ul class="skill-card__badges" aria-label="tecnologie">
                   <li class="skill-badge">Java</li>
                   <li class="skill-badge">Python</li>
@@ -156,7 +167,9 @@
               </article>
               <article class="glass-card skill-card">
                 <h4 class="skill-card__title" data-i18n="skills.s2.title">Database</h4>
-                <p class="skill-card__desc" data-i18n="skills.s2.desc">Progettazione e gestione di basi di dati relazionali.</p>
+                <p class="skill-card__desc" data-i18n="skills.s2.desc">
+                  Progettazione e gestione di basi di dati relazionali.
+                </p>
                 <ul class="skill-card__badges" aria-label="tecnologie">
                   <li class="skill-badge">MySQL</li>
                   <li class="skill-badge">SQL</li>
@@ -167,48 +180,100 @@
               </article>
               <article class="glass-card skill-card">
                 <h4 class="skill-card__title" data-i18n="skills.s3.title">Networking &amp; Linux</h4>
-                <p class="skill-card__desc" data-i18n="skills.s3.desc">Basi di reti informatiche, configurazioni essenziali e utilizzo di Linux da terminale.</p>
+                <p class="skill-card__desc" data-i18n="skills.s3.desc">
+                  Basi di reti informatiche, configurazioni Cisco e utilizzo di Linux da terminale.
+                </p>
                 <ul class="skill-card__badges" aria-label="tecnologie">
                   <li class="skill-badge">Linux</li>
                   <li class="skill-badge">SSH</li>
                   <li class="skill-badge">Cisco</li>
+                  <li class="skill-badge">CCNA</li>
+                  <li class="skill-badge">TCP/IP</li>
                 </ul>
               </article>
             </div>
           </div>
 
+          <!-- Web / Dev -->
           <div class="skills__group reveal" data-reveal>
-            <h3 class="skills__group-title" data-i18n="skills.personal.title">Competenze personali</h3>
+            <h3 class="skills__group-title" data-i18n="skills.personal.title">Sviluppo web e workflow</h3>
             <div class="skills__row" tabindex="0" data-i18n-aria-label="skills.personal.aria">
               <article class="glass-card skill-card">
-                <h4 class="skill-card__title" data-i18n="skills.p1.title">Web Design</h4>
-                <p class="skill-card__desc" data-i18n="skills.p1.desc">Creazione di interfacce moderne, responsive e curate dal punto di vista visivo.</p>
+                <h4 class="skill-card__title" data-i18n="skills.p1.title">Web Development</h4>
+                <p class="skill-card__desc" data-i18n="skills.p1.desc">
+                  Creazione di siti e interfacce web moderne, responsive e curate dal lato visivo.
+                </p>
                 <ul class="skill-card__badges" aria-label="tecnologie">
-                  <li class="skill-badge">Responsive design</li>
-                  <li class="skill-badge">UI basics</li>
-                  <li class="skill-badge">Landing page</li>
-                  <li class="skill-badge">Portfolio</li>
+                  <li class="skill-badge">HTML / CSS</li>
+                  <li class="skill-badge">JavaScript</li>
+                  <li class="skill-badge">Responsive</li>
+                  <li class="skill-badge">UI design</li>
                 </ul>
               </article>
               <article class="glass-card skill-card">
                 <h4 class="skill-card__title" data-i18n="skills.p2.title">Workflow di sviluppo</h4>
-                <p class="skill-card__desc" data-i18n="skills.p2.desc">Organizzazione dei progetti, versionamento e pubblicazione online.</p>
+                <p class="skill-card__desc" data-i18n="skills.p2.desc">
+                  Organizzazione dei progetti, versionamento e pubblicazione online.
+                </p>
                 <ul class="skill-card__badges" aria-label="tecnologie">
                   <li class="skill-badge">Git</li>
                   <li class="skill-badge">GitHub</li>
                   <li class="skill-badge">GitHub Pages</li>
                   <li class="skill-badge">VS Code</li>
-                  <li class="skill-badge">Cursor</li>
                 </ul>
               </article>
               <article class="glass-card skill-card">
-                <h4 class="skill-card__title" data-i18n="skills.p3.title">Brand e contenuti digitali</h4>
-                <p class="skill-card__desc" data-i18n="skills.p3.desc">Interesse per identità visiva, comunicazione digitale e progetti creativi.</p>
+                <h4 class="skill-card__title" data-i18n="skills.p3.title">Design e prototipazione</h4>
+                <p class="skill-card__desc" data-i18n="skills.p3.desc">
+                  Strumenti per progettare interfacce, layout e identità visive.
+                </p>
                 <ul class="skill-card__badges" aria-label="tecnologie">
-                  <li class="skill-badge">Shopify basics</li>
                   <li class="skill-badge">Figma</li>
-                  <li class="skill-badge">Content design</li>
                   <li class="skill-badge">Visual identity</li>
+                  <li class="skill-badge">Layout</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- Creative / 3D -->
+          <div class="skills__group reveal" data-reveal>
+            <h3 class="skills__group-title" data-i18n="skills.creative.title">3D e strumenti creativi</h3>
+            <div class="skills__row" tabindex="0" data-i18n-aria-label="skills.creative.aria">
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.c1.title">Blender</h4>
+                <p class="skill-card__desc" data-i18n="skills.c1.desc">
+                  Modellazione 3D, rendering e sperimentazione con materiali e luci.
+                </p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Blender</li>
+                  <li class="skill-badge" data-i18n="skills.c1.badge.modeling">Modellazione</li>
+                  <li class="skill-badge">Rendering</li>
+                  <li class="skill-badge">Shading</li>
+                </ul>
+              </article>
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.c2.title">Unity</h4>
+                <p class="skill-card__desc" data-i18n="skills.c2.desc">
+                  Sviluppo di esperienze interattive e sperimentazione con il game engine Unity.
+                </p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Unity</li>
+                  <li class="skill-badge">C#</li>
+                  <li class="skill-badge" data-i18n="skills.c2.badge.gamedev">Game dev</li>
+                  <li class="skill-badge" data-i18n="skills.c2.badge.physics">Fisica 2D/3D</li>
+                </ul>
+              </article>
+              <article class="glass-card skill-card">
+                <h4 class="skill-card__title" data-i18n="skills.c3.title">Arduino &amp; Tinkercad</h4>
+                <p class="skill-card__desc" data-i18n="skills.c3.desc">
+                  Prototipi hardware e simulazioni elettroniche con Arduino e Tinkercad.
+                </p>
+                <ul class="skill-card__badges" aria-label="tecnologie">
+                  <li class="skill-badge">Arduino</li>
+                  <li class="skill-badge">Tinkercad</li>
+                  <li class="skill-badge" data-i18n="skills.c3.badge.electronics">Elettronica</li>
+                  <li class="skill-badge" data-i18n="skills.c3.badge.proto">Prototipazione</li>
                 </ul>
               </article>
             </div>
@@ -216,131 +281,32 @@
         </div>
       </section>
 
-      <section class="section services" id="services" aria-labelledby="services-title">
-        <div class="container">
-          <div class="section__head reveal" data-reveal>
-            <span class="section__label" data-i18n="services.label">Servizi</span>
-            <h2 id="services-title" class="section__title" data-i18n="services.title">
-              Cosa posso fare per te
-            </h2>
-            <p class="section__lead" data-i18n="services.lead">
-              Soluzioni su misura per chi vuole comparire online in modo professionale, senza
-              complicazioni inutili.
-            </p>
-          </div>
-          <div class="services__grid">
-            <article class="glass-card service-card reveal" data-reveal>
-              <div class="service-card__icon" aria-hidden="true">01</div>
-              <h3 class="service-card__title" data-i18n="services.1.title">Landing page</h3>
-              <p class="service-card__text" data-i18n="services.1.text">
-                Una pagina completa per presentare attività, servizi, contatti, orari e posizione.
-              </p>
-            </article>
-            <article class="glass-card service-card reveal" data-reveal>
-              <div class="service-card__icon" aria-hidden="true">02</div>
-              <h3 class="service-card__title" data-i18n="services.2.title">Redesign sito</h3>
-              <p class="service-card__text" data-i18n="services.2.text">
-                Rinnovo siti esistenti rendendoli più moderni, ordinati e adatti al mobile.
-              </p>
-            </article>
-            <article class="glass-card service-card reveal" data-reveal>
-              <div class="service-card__icon" aria-hidden="true">03</div>
-              <h3 class="service-card__title" data-i18n="services.3.title">Siti per brand</h3>
-              <p class="service-card__text" data-i18n="services.3.text">
-                Creo pagine con uno stile visivo forte per brand, prodotti e progetti creativi.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section process" id="process" aria-labelledby="process-title">
-        <div class="container container--narrow">
-          <div class="section__head reveal section__head--center" data-reveal>
-            <span class="section__label" data-i18n="process.label">Come lavoro</span>
-            <h2 id="process-title" class="section__title" data-i18n="process.title">
-              Processo di lavoro
-            </h2>
-          </div>
-          <ol class="process__timeline">
-            <li class="process-step process-step--odd reveal" data-reveal>
-              <article class="glass-card process-card">
-                <h3 class="process-card__heading">
-                  <span class="process-card__num">01</span>
-                  <span class="process-card__title" data-i18n="process.s1.title">Analisi</span>
-                </h3>
-                <p class="process-card__text" data-i18n="process.s1.text">
-                  Capisco obiettivo, stile, contenuti necessari e risultato che il sito deve
-                  ottenere.
-                </p>
-              </article>
-            </li>
-            <li class="process-step process-step--even reveal" data-reveal>
-              <article class="glass-card process-card">
-                <h3 class="process-card__heading">
-                  <span class="process-card__num">02</span>
-                  <span class="process-card__title" data-i18n="process.s2.title">Struttura</span>
-                </h3>
-                <p class="process-card__text" data-i18n="process.s2.text">
-                  Organizzo le sezioni, il flusso della pagina e le informazioni più importanti.
-                </p>
-              </article>
-            </li>
-            <li class="process-step process-step--odd reveal" data-reveal>
-              <article class="glass-card process-card">
-                <h3 class="process-card__heading">
-                  <span class="process-card__num">03</span>
-                  <span class="process-card__title" data-i18n="process.s3.title"
-                    >Design e sviluppo</span
-                  >
-                </h3>
-                <p class="process-card__text" data-i18n="process.s3.text">
-                  Creo una versione moderna, responsive e coerente con l’identità dell’attività.
-                </p>
-              </article>
-            </li>
-            <li class="process-step process-step--even reveal" data-reveal>
-              <article class="glass-card process-card">
-                <h3 class="process-card__heading">
-                  <span class="process-card__num">04</span>
-                  <span class="process-card__title" data-i18n="process.s4.title"
-                    >Pubblicazione</span
-                  >
-                </h3>
-                <p class="process-card__text" data-i18n="process.s4.text">
-                  Pubblico il sito online, controllo mobile, link, performance e dettagli finali.
-                </p>
-              </article>
-            </li>
-          </ol>
-        </div>
-      </section>
-
+      <!-- ─── PROJECTS ──────────────────────────────────────────────────────── -->
       <section class="section projects" id="projects" aria-labelledby="projects-title">
         <div class="container">
           <div class="section__head reveal" data-reveal>
             <span class="section__label" data-i18n="projects.label">Progetti</span>
             <h2 id="projects-title" class="section__title" data-i18n="projects.title">
-              Lavori e demo
+              Quello che ho costruito
             </h2>
             <p class="section__lead" data-i18n="projects.lead">
-              Esempi e progetti in corso. Ogni card riflette uno stato reale del lavoro.
+              Esperimenti personali, progetti scolastici e prototipi. Ogni lavoro riflette qualcosa
+              che ho esplorato e imparato.
             </p>
           </div>
-          <div class="projects__grid">
+          <div class="projects__grid projects__grid--2col">
+
+            <!-- Concrete Dreams -->
             <article class="glass-card project-card project-card--done reveal" data-reveal>
               <span
                 class="project-card__status project-card__status--done"
                 data-i18n="projects.status.done"
-                >Demo completata</span
-              >
-              <p class="project-card__category" data-i18n="projects.1.cat">
-                Redesign brand streetwear
-              </p>
+              >Completato</span>
+              <p class="project-card__category" data-i18n="projects.1.cat">Esperimento web design</p>
               <h3 class="project-card__title">Concrete Dreams</h3>
               <p class="project-card__desc" data-i18n="projects.1.desc">
-                Redesign demo per un brand streetwear, con focus su estetica, identità visiva e
-                presentazione dei prodotti.
+                Concept e redesign di un brand streetwear immaginario. Progetto personale per
+                esplorare UI, identità visiva e sviluppo frontend con HTML, CSS e JS.
               </p>
               <a
                 class="btn btn--primary btn--sm"
@@ -348,66 +314,95 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 data-i18n="projects.1.cta"
-                >Apri progetto</a
-              >
+              >Apri progetto</a>
             </article>
-            <article class="glass-card project-card project-card--wip reveal" data-reveal>
+
+            <!-- This portfolio -->
+            <article class="glass-card project-card project-card--done reveal" data-reveal>
               <span
-                class="project-card__badge"
-                data-i18n="projects.wip.badge"
-                data-i18n-aria-label="projects.status.wip"
-                >WIP</span
-              >
-              <span
-                class="project-card__status project-card__status--wip"
-                data-i18n="projects.status.wip"
-                >In corso</span
-              >
-              <p class="project-card__category" data-i18n="projects.2.cat">
-                Sito attività locale
-              </p>
-              <h3 class="project-card__title" data-i18n="projects.2.title">In arrivo</h3>
+                class="project-card__status project-card__status--done"
+                data-i18n="projects.status.done"
+              >Completato</span>
+              <p class="project-card__category" data-i18n="projects.2.cat">Portfolio personale</p>
+              <h3 class="project-card__title" data-i18n="projects.2.title">Questo sito</h3>
               <p class="project-card__desc" data-i18n="projects.2.desc">
-                Nuova landing page per un’attività locale. Il progetto verrà aggiunto appena
-                completato.
+                Portfolio personale costruito da zero con HTML, CSS e JavaScript vanilla. Design
+                dark con animazioni scroll, glassmorphism e supporto multilingua IT/EN.
               </p>
-              <span class="btn btn--disabled btn--sm" role="button" aria-disabled="true" data-i18n="projects.2.btn">In lavorazione</span>
+              <a
+                class="btn btn--primary btn--sm"
+                href="https://github.com/stefano-ferraro"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.2.cta"
+              >Codice su GitHub</a>
             </article>
+
+            <!-- Java / Database school projects -->
             <article class="glass-card project-card project-card--wip reveal" data-reveal>
               <span
                 class="project-card__badge"
                 data-i18n="projects.wip.badge"
                 data-i18n-aria-label="projects.status.wip"
-                >WIP</span
-              >
+              >WIP</span>
               <span
                 class="project-card__status project-card__status--wip"
                 data-i18n="projects.status.wip"
-                >In corso</span
-              >
-              <p class="project-card__category" data-i18n="projects.3.cat">
-                Sito brand creativo
-              </p>
-              <h3 class="project-card__title" data-i18n="projects.3.title">In arrivo</h3>
+              >In corso</span>
+              <p class="project-card__category" data-i18n="projects.3.cat">Progetti scolastici</p>
+              <h3 class="project-card__title" data-i18n="projects.3.title">Java &amp; Database</h3>
               <p class="project-card__desc" data-i18n="projects.3.desc">
-                Nuovo sito per brand o progetto creativo. Sezione riservata ai prossimi lavori.
+                Algoritmi e programmi sviluppati a scuola in Java, gestione di database MySQL con
+                query SQL, modellazione E/R e normalizzazione delle tabelle.
               </p>
-              <span class="btn btn--disabled btn--sm" role="button" aria-disabled="true" data-i18n="projects.3.btn">In lavorazione</span>
+              <span
+                class="btn btn--disabled btn--sm"
+                role="button"
+                aria-disabled="true"
+                data-i18n="projects.3.btn"
+              >Presto su GitHub</span>
             </article>
+
+            <!-- Blender / 3D experiments -->
+            <article class="glass-card project-card project-card--wip reveal" data-reveal>
+              <span
+                class="project-card__badge"
+                data-i18n="projects.wip.badge"
+                data-i18n-aria-label="projects.status.wip"
+              >WIP</span>
+              <span
+                class="project-card__status project-card__status--wip"
+                data-i18n="projects.status.wip"
+              >In corso</span>
+              <p class="project-card__category" data-i18n="projects.4.cat">3D &amp; Creatività</p>
+              <h3 class="project-card__title" data-i18n="projects.4.title">Render Blender</h3>
+              <p class="project-card__desc" data-i18n="projects.4.desc">
+                Esperimenti di modellazione 3D e rendering in Blender. Oggetti, scene e materiali
+                realizzati nel tempo libero per esplorare la grafica 3D.
+              </p>
+              <span
+                class="btn btn--disabled btn--sm"
+                role="button"
+                aria-disabled="true"
+                data-i18n="projects.4.btn"
+              >Presto online</span>
+            </article>
+
           </div>
         </div>
       </section>
 
+      <!-- ─── CONTACT ───────────────────────────────────────────────────────── -->
       <section class="section contact" id="contact" aria-labelledby="contact-title">
         <div class="container">
           <div class="contact__layout">
             <div class="section__head reveal" data-reveal>
               <span class="section__label" data-i18n="contact.label">Contatti</span>
               <h2 id="contact-title" class="section__title" data-i18n="contact.title">
-                Parliamo del tuo progetto
+                Trovami qui
               </h2>
               <p class="section__lead" data-i18n="contact.lead">
-                Scrivimi per una prima call o un preventivo: rispondo in tempi ragionevoli.
+                Se vuoi vedere i miei lavori, scrivermi o semplicemente connetterti — ecco dove mi trovo.
               </p>
             </div>
             <div class="glass-card contact__card contact-inner reveal" data-reveal>
@@ -415,7 +410,10 @@
                 <a class="contact-btn contact-link" href="mailto:stefanoferraro17@icloud.com">
                   <span class="contact-btn__label contact-link-title">Email</span>
                   <span class="contact-btn__arrow contact-link-arrow" aria-hidden="true">→</span>
-                  <span class="contact-btn__hint contact-link-text" data-i18n="contact.email.hint">Scrivimi per collaborazioni, progetti o informazioni.</span>
+                  <span
+                    class="contact-btn__hint contact-link-text"
+                    data-i18n="contact.email.hint"
+                  >Scrivimi direttamente per qualsiasi cosa.</span>
                 </a>
                 <a
                   class="contact-btn contact-link"
@@ -428,12 +426,11 @@
                   <span
                     class="contact-btn__hint contact-link-text"
                     data-i18n="contact.github.hint"
-                    >Dai un’occhiata ai miei progetti e al codice.</span
-                  >
+                  >Tutti i miei progetti e il codice sorgente.</span>
                 </a>
                 <a
                   class="contact-btn contact-link"
-                  href="www.linkedin.com/in/stefano-angelo-ferraro"
+                  href="https://www.linkedin.com/in/stefano-angelo-ferraro"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -442,8 +439,7 @@
                   <span
                     class="contact-btn__hint contact-link-text"
                     data-i18n="contact.linkedin.hint"
-                    >Connettiti con me per profilo, esperienze e opportunità.</span
-                  >
+                  >Il mio profilo professionale e percorso formativo.</span>
                 </a>
                 <a
                   class="contact-btn contact-link"
@@ -456,20 +452,20 @@
                   <span
                     class="contact-btn__hint contact-link-text"
                     data-i18n="contact.instagram.hint"
-                    >Scrivimi anche su Instagram per un contatto più diretto.</span
-                  >
+                  >Per un contatto più diretto e informale.</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="footer">
       <div class="container footer__inner">
-<p class="footer__brand">© <span id="year"></span> Stefano Ferraro</p>
-        <p class="footer__tag" data-i18n="footer.tag">Web design &amp; sviluppo — Italia</p>
+        <p class="footer__brand">© <span id="year"></span> Stefano Ferraro</p>
+        <p class="footer__tag" data-i18n="footer.tag">Studente di informatica — Milano, Italia</p>
         <a class="footer__top" href="#top" data-i18n="footer.top">Torna su</a>
       </div>
     </footer>

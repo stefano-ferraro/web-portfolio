@@ -840,6 +840,10 @@ button:focus-visible {
   .projects__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .projects__grid--2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .project-card {
