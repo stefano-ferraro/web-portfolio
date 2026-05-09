@@ -80,21 +80,11 @@
       "projects.1.desc":
         "Concept e redesign di un brand streetwear immaginario. Progetto personale per esplorare UI, identità visiva e sviluppo frontend con HTML, CSS e JS.",
       "projects.1.cta": "Apri progetto",
-      "projects.2.cat": "Portfolio personale",
-      "projects.2.title": "Questo sito",
+      "projects.2.cat": "3D & Creatività",
+      "projects.2.title": "Render Blender",
       "projects.2.desc":
-        "Portfolio personale costruito da zero con HTML, CSS e JavaScript vanilla. Design dark con animazioni scroll, glassmorphism e supporto multilingua IT/EN.",
-      "projects.2.cta": "Codice su GitHub",
-      "projects.3.cat": "Progetti scolastici",
-      "projects.3.title": "Java & Database",
-      "projects.3.desc":
-        "Algoritmi e programmi sviluppati a scuola in Java, gestione di database MySQL con query SQL, modellazione E/R e normalizzazione delle tabelle.",
-      "projects.3.btn": "Presto su GitHub",
-      "projects.4.cat": "3D & Creatività",
-      "projects.4.title": "Render Blender",
-      "projects.4.desc":
         "Esperimenti di modellazione 3D e rendering in Blender. Oggetti, scene e materiali realizzati nel tempo libero per esplorare la grafica 3D.",
-      "projects.4.btn": "Presto online",
+      "projects.2.cta": "Guarda la gallery",
       "contact.label": "Contatti",
       "contact.title": "Trovami qui",
       "contact.lead":
@@ -182,21 +172,11 @@
       "projects.1.desc":
         "Concept and redesign of an imaginary streetwear brand. Personal project to explore UI, visual identity and frontend development with HTML, CSS and JS.",
       "projects.1.cta": "View project",
-      "projects.2.cat": "Personal portfolio",
-      "projects.2.title": "This site",
+      "projects.2.cat": "3D & Creativity",
+      "projects.2.title": "Blender renders",
       "projects.2.desc":
-        "Personal portfolio built from scratch with vanilla HTML, CSS and JavaScript. Dark design with scroll animations, glassmorphism and IT/EN multilanguage support.",
-      "projects.2.cta": "Code on GitHub",
-      "projects.3.cat": "School projects",
-      "projects.3.title": "Java & Databases",
-      "projects.3.desc":
-        "Algorithms and programs developed at school in Java, MySQL database management with SQL queries, E/R modelling and table normalization.",
-      "projects.3.btn": "Coming to GitHub",
-      "projects.4.cat": "3D & Creativity",
-      "projects.4.title": "Blender renders",
-      "projects.4.desc":
         "3D modelling and rendering experiments in Blender. Objects, scenes and materials made in my free time while exploring 3D graphics.",
-      "projects.4.btn": "Coming soon",
+      "projects.2.cta": "View gallery",
       "contact.label": "Contact",
       "contact.title": "Find me here",
       "contact.lead":
