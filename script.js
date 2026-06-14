@@ -20,14 +20,14 @@
       "hero.eyebrow": "Studente di Informatica · Milano",
       "hero.title": "Codice, reti, 3D e progetti che nascono per curiosità.",
       "hero.subtitle":
-        "Sono Stefano Ferraro — studio informatica e costruisco cose tra programmazione, networking, web e strumenti creativi come Blender e Unity.",
+        "Qui trovi chi sono, le competenze che sto sviluppando e i progetti che porto avanti.",
       "hero.cta.projects": "Guarda i progetti",
       "hero.cta.github": "GitHub",
       "about.label": "Chi sono",
       "about.title": "Studio, codice e curiosità creativa",
       "about.alt": "Ritratto di Stefano Ferraro",
       "about.p1":
-        "Sono Stefano Ferraro, studente di informatica all’Istituto Torricelli di Milano. In questi anni ho esplorato programmazione, basi di dati, reti informatiche e sviluppo software.",
+        "Sono Stefano Ferraro, studente di informatica all'ITIS Evangelista Torricelli di Milano. In questi anni ho esplorato programmazione, basi di dati, reti informatiche e sviluppo software.",
       "about.p2":
         "Quello che mi piace di più di questo campo è che permette di mescolare lati molto diversi: la logica dei sistemi, la creatività del design, la curiosità per come funziona tutto.",
       "about.p3":
@@ -112,20 +112,20 @@
       "hero.eyebrow": "Informatics Student · Milan",
       "hero.title": "Code, networks, 3D and projects born out of curiosity.",
       "hero.subtitle":
-        "I’m Stefano Ferraro — I study computer science and build things across programming, networking, web and creative tools like Blender and Unity.",
+        "Here you'll find who I am, the skills I'm building and the projects I'm working on.",
       "hero.cta.projects": "View projects",
       "hero.cta.github": "GitHub",
       "about.label": "About",
       "about.title": "Study, code and creative curiosity",
       "about.alt": "Portrait of Stefano Ferraro",
       "about.p1":
-        "I’m Stefano Ferraro, an informatics student at Istituto Torricelli in Milan. Over these years I’ve explored programming, databases, networking and software development.",
+        "I'm Stefano Ferraro, an informatics student at ITIS Evangelista Torricelli in Milan. Over these years I've explored programming, databases, networking and software development.",
       "about.p2":
         "What I enjoy most about this field is that it lets you mix very different sides: the logic of systems, the creativity of design, the curiosity for how everything works.",
       "about.p3":
-        "In my free time I’ve also started exploring creative tools like Blender for 3D graphics and Unity for interactive experiences — two worlds that connect naturally with programming.",
+        "In my free time I've also started exploring creative tools like Blender for 3D graphics and Unity for interactive experiences — two worlds that connect naturally with programming.",
       "about.p4":
-        "I’m interested in building real things, experimenting and keep learning. Whether it’s a web project, a database, a network or a 3D scene.",
+        "I'm interested in building real things, experimenting and keep learning. Whether it's a web project, a database, a network or a 3D scene.",
       "skills.label": "Skills",
       "skills.title": "Technologies & Tools",
       "skills.subtitle":
