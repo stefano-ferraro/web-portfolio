@@ -85,6 +85,10 @@
       "projects.2.desc":
         "Esperimenti di modellazione 3D e rendering in Blender. Oggetti, scene e materiali realizzati nel tempo libero per esplorare la grafica 3D.",
       "projects.2.cta": "Guarda la gallery",
+      "projects.3.cat": "Progetto scolastico",
+      "projects.3.desc":
+        "Sito web per una compagnia immaginaria di networking e crescita per startup e piccoli brand. Landing completa con servizi, team e analisi economica.",
+      "projects.3.cta": "Apri progetto",
       "contact.label": "Contatti",
       "contact.title": "Trovami qui",
       "contact.lead":
@@ -177,6 +181,10 @@
       "projects.2.desc":
         "3D modelling and rendering experiments in Blender. Objects, scenes and materials made in my free time while exploring 3D graphics.",
       "projects.2.cta": "View gallery",
+      "projects.3.cat": "School project",
+      "projects.3.desc":
+        "Website for an imaginary networking and growth company for startups and small brands. Full landing page with services, team and economic analysis.",
+      "projects.3.cta": "View project",
       "contact.label": "Contact",
       "contact.title": "Find me here",
       "contact.lead":
